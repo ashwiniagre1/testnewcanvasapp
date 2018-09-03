@@ -1,0 +1,14 @@
+<amexio-card [footer]="true" [header]="true" [show]="true" [header-align]="'left'" [footer-align]="'right'">
+    <amexio-header>
+        departemnt list
+    </amexio-header>
+    <amexio-body>
+        <amexio-dropdown [(ngModel)]="deptlist.id" name="deptlist.id" [search]="true" [field-label]="'Dept List'" [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/dept/findall'" [http-method]="'get'" [display-field]="'name'" [value-field]="'Id'">
+        </amexio-dropdown>
+
+    </amexio-body>
+
+    <amexio-action>
+
+    </amexio-action>
+</amexio-card>
